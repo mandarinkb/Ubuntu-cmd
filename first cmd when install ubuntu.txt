@@ -1,0 +1,110 @@
+##install thai format##
+sudo apt install fonts-thai-tlwg
+(after that choose language support applications and change in Regional Formats menu to thai language)
+
+##openjdk-8##
+#install openjdk
+sudo apt-get install openjdk-8-jdk
+#check openjdk version
+java -version
+#uninstall
+sudo apt-get purge --auto-remove openjdk*
+
+##nodejs-10##
+#install curl
+sudo apt install curl
+#choose nodejs version
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+#install nodejs
+sudo apt install nodejs
+#check nodejs version
+node -v
+
+##vs code##
+#
+sudo apt update
+#
+sudo apt install software-properties-common apt-transport-https wget
+#
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+#
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+#
+sudo apt update
+#
+sudo apt install code
+
+--set extensions for angular7--
+#Angular Language Service
+#json2ts
+#Angular Snippets (Version 8)
+#TSLint (deprecated)
+
+
+##tyscript 3.1.6##
+sudo npm install -g typescript@3.1.6
+#check version 
+tsc -v
+
+##Angular##
+sudo npm install -g @angular/cli
+#check version
+ng --version
+#v.7.0.7
+sudo npm install -g @angular/cli@7.0.7
+#uninstall
+sudo npm uninstall -g @angular/cli
+sudo npm cache clean --force
+
+
+##ionic ##
+#v.latest
+sudo npm install -g ionic@latest
+#v.4.7.1
+sudo npm install -g ionic@4.7.1
+#uninstall
+sudo npm uninstall -g ionic
+#info
+sudo ionic info
+#for build apk install cordova
+sudo npm install -g cordova 
+
+##git##
+#
+sudo apt update
+#
+sudo apt install git
+#check git version
+git --version
+
+##eclipse##
+sudo snap install --classic eclipse
+
+##docker ce##
+#
+sudo apt update
+#
+sudo apt install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common
+#
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg |\
+    sudo apt-key add -
+#
+sudo apt-key fingerprint 0EBFCD88
+pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88
+uid         [ unknown] Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096 2017-02-22 [S]
+#
+sudo add-apt-repository \
+    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+    $(lsb_release -cs) \
+    stable"
+#
+sudo apt update
+#
+sudo apt install docker-ce
+
