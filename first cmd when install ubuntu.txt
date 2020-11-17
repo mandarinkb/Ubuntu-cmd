@@ -66,7 +66,8 @@ sudo npm install -g ionic@4.7.1
 sudo npm uninstall -g ionic
 #info
 sudo ionic info
-#for build apk install cordova
+
+##for build apk install cordova##
 sudo npm install -g cordova 
 
 ##git##
